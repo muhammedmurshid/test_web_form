@@ -4,6 +4,7 @@
     'sequence': "0",
     'depends': ['base', 'mail',],
     'data': [
+        'group/group.xml',
         'security/ir.model.access.csv',
         'views/back_form.xml',
         'views/web.xml',

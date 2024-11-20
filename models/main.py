@@ -15,7 +15,7 @@ class ZohoIntegration(http.Controller):
 
         return request.render('test_web_form.online_appointment_form')
 
-    @http.route(['/lead_form/submit'], type='http', auth='public', website=True, methods=['POST'])
+    @http.route(['/lead_form/submit'], type='http', auth='public', website=True,)
     def lead_form_submit(self, **kwargs):
         # Prepare data to send to Zoho
         # zoho_url = "https://crm.zoho.in/crm/WebToLeadForm"
