@@ -4,7 +4,7 @@ import requests
 
 
 class ZohoIntegration(http.Controller):
-    @http.route(['/lead_form'], type='http', auth='public', website=True, methods=['POST'])
+    @http.route(['/lead_form'], type='http', auth='public', website=True)
     def lead_form(self, **kwargs):
         # Prepare data to send to Zoho
         # zoho_url = "https://crm.zoho.in/crm/WebToLeadForm"
