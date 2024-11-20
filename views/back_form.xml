@@ -10,6 +10,10 @@
                     <group>
                         <group>
                             <field name="name"/>
+                            <field name="mail"/>
+                            <field name="phone"/>
+                            <field name="course"/>
+                            <field name="date"/>
 
                         </group>
                     </group>
@@ -24,6 +28,9 @@
         <field name="arch" type="xml">
             <tree>
                 <field name="name"/>
+                <field name="mail"/>
+                <field name="phone"/>
+                <field name="course"/>
             </tree>
 
         </field>
