@@ -92,7 +92,7 @@
                                 <!-- Submit Button -->
                                 <div class="form-group col-12 s_website_form_submit" align="center">
                                     <div style="width: 500px;" class="s_website_form_label"></div>
-                                    <button type="submit" class="btn btn-primary" style="width: 335px;">Submit</button>
+                                    <button type="submit" class="btn btn-primary" style="width: 331px;">Submit</button>
                                 </div>
                             </div>
                         </form>
