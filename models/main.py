@@ -31,7 +31,7 @@ class ZohoIntegration(http.Controller):
             'name': kwargs.get('name'),
             'email_address': kwargs.get('email'),
             'phone_number': kwargs.get('phone'),
-            # 'course': kwargs.get('course'),
+            'preferred_course': kwargs.get('course'),
             'leads_source': source.id,
             'district': 'nil',
             'mode_of_study': 'nil',
