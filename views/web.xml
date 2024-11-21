@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <template id="online_appointment_form">
+    <template id="lead_web_enquire_form" name="Contact Us">
         <t t-call="website.layout">
-            <!--            <head>-->
-            <!--                <meta charset="UTF-8"/>-->
-            <!--                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>-->
-            <!--                <title>Contact US</title>-->
-            <!--                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">-->
-            <!--            </head>-->
+
             <div id="wrap" class="oe_structure oe_empty">
                 <section class="s_website_form" data-vcss="001" data-snippet="s_website_form"
                          style="background: #1a1a1a; padding: 20px; border-radius: 10px; max-width: 400px; margin: 50px auto;">
@@ -26,11 +21,11 @@
                                 <!-- Name Field -->
                                 <div class="form-group col-12 s_website_form_field s_website_form_required">
                                     <div class="row s_col_no_resize s_col_no_bgcolor">
-<!--                                        <label class="col-form-label col-sm-auto s_website_form_label"-->
-<!--                                               style="width: 200px;" for="name">-->
-<!--                                            <span class="s_website_form_label_content">Name</span>-->
-<!--                                            <span class="s_website_form_mark">*</span>-->
-<!--                                        </label>-->
+                                        <!--                                        <label class="col-form-label col-sm-auto s_website_form_label"-->
+                                        <!--                                               style="width: 200px;" for="name">-->
+                                        <!--                                            <span class="s_website_form_label_content">Name</span>-->
+                                        <!--                                            <span class="s_website_form_mark">*</span>-->
+                                        <!--                                        </label>-->
                                         <div class="col-sm">
                                             <input id="name" type="text" class="form-control s_website_form_input"
                                                    name="name" placeholder="Name"/>
@@ -41,11 +36,7 @@
                                 <!-- Phone Field -->
                                 <div class="form-group col-12 s_website_form_field s_website_form_required">
                                     <div class="row s_col_no_resize s_col_no_bgcolor">
-<!--                                        <label class="col-form-label col-sm-auto s_website_form_label"-->
-<!--                                               style="width: 200px;" for="phone">-->
-<!--                                            <span class="s_website_form_label_content">Phone</span>-->
-<!--                                            <span class="s_website_form_mark">*</span>-->
-<!--                                        </label>-->
+
                                         <div class="col-sm">
                                             <input id="phone" type="text" class="form-control s_website_form_input"
                                                    name="phone" placeholder="Phone"/>
@@ -56,11 +47,11 @@
                                 <!-- Email Field -->
                                 <div class="form-group col-12 s_website_form_field s_website_form_required">
                                     <div class="row s_col_no_resize s_col_no_bgcolor">
-<!--                                        <label class="col-form-label col-sm-auto s_website_form_label"-->
-<!--                                               style="width: 200px;" for="email">-->
-<!--                                            <span class="s_website_form_label_content">Email</span>-->
-<!--                                            <span class="s_website_form_mark">*</span>-->
-<!--                                        </label>-->
+                                        <!--                                        <label class="col-form-label col-sm-auto s_website_form_label"-->
+                                        <!--                                               style="width: 200px;" for="email">-->
+                                        <!--                                            <span class="s_website_form_label_content">Email</span>-->
+                                        <!--                                            <span class="s_website_form_mark">*</span>-->
+                                        <!--                                        </label>-->
                                         <div class="col-sm">
                                             <input id="email" type="email" class="form-control s_website_form_input"
                                                    name="email" placeholder="Email"/>
@@ -68,18 +59,31 @@
                                     </div>
                                 </div>
 
-                                <!-- Appointment Date Field -->
+                                <!-- Appointment
+                                 Field -->
                                 <div class="form-group col-12 s_website_form_field s_website_form_required">
                                     <div class="row s_col_no_resize s_col_no_bgcolor">
-<!--                                        <label class="col-form-label col-sm-auto s_website_form_label"-->
-<!--                                               style="width: 200px;" for="appointment_date">-->
-<!--                                            <span class="s_website_form_label_content">Date</span>-->
-<!--                                            <span class="s_website_form_mark">*</span>-->
-<!--                                        </label>-->
                                         <div class="col-sm">
-                                            <input id="appointment_date" type="date"
-                                                   class="form-control s_website_form_input" name="appointment_date"
-                                            placeholder="Course"/>
+                                            <select id="course" class="form-control s_website_form_input" name="course">
+
+                                                <option value="CA Foundation">CA Foundation</option>
+                                                <option value="CA Intermediate">CA Intermediate</option>
+                                                <option value="CSEET">CSEET</option>
+                                                <option value="CA Final">CA Final</option>
+                                                <option value="ACCA">ACCA</option>
+                                                <option value="BCom + ACCA">BCom + ACCA</option>
+                                                <option value="MBA + ACCA">MBA + ACCA</option>
+                                                <option value="CMA USA">CMA USA</option>
+                                                <option value="CMA CAT">CMA CAT</option>
+                                                <option value="CMA Intermediate">CMA Intermediate</option>
+                                                <option value="CMA Final">CMA Final</option>
+                                                <option value="CPA USA">CPA USA</option>
+                                                <option value="MCom + CPA">MCom + CPA</option>
+                                                <option value="CIA">CIA</option>
+                                                <option value="EA">EA</option>
+                                                <option value="CS Executive">CS Executive</option>
+                                                <option value="Nil">Nil</option>
+                                            </select>
                                         </div>
                                     </div>
                                 </div>
@@ -97,17 +101,37 @@
             </div>
         </t>
     </template>
-    <template id="logic_contact_us_success" name="Customer Form Successfully Submitted">
+    <template id="tmp_lead_enquire_form_success" name="Customer Form Successfully Submitted">
         <t t-call="website.layout">
             <div id="wrap">
-                <div class="container">
-                    <div class="col-md-12">
-                        <div class="alert alert-success">
-                            Success..
+                <div class="oe_structure" id="oe_structure_website_form_contact_us_thanks_1"/>
+                <div class="container mt-4">
+                    <div class="row">
+                        <div class="col-lg-7 col-xl-6 mr-lg-auto oe_structure">
+                            <section class="pt40 s_text_block pb40 o_colored_level o_cc o_cc1"
+                                     data-snippet="s_text_block" data-name="Text">
+                                <div class="container">
+                                    <span class="d-block fa fa-4x fa-thumbs-up mx-auto rounded-circle bg-primary"/>
+                                    <br/>
+                                    <h1 class="text-center">Thank You!</h1>
+                                    <div class="pb16 pt16 s_hr" data-snippet="s_hr" data-name="Separator">
+                                        <hr class="mx-auto border-top w-50 border-dark text-center"/>
+                                    </div>
+                                    <h5 align="center">
+                                        <span class="fa fa-check-circle text-success mr-2"/>
+                                        Thank you for your enquiry!
+                                    </h5>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-lg-4">
+                            <t t-call="website.company_description"/>
                         </div>
                     </div>
                 </div>
+                <div class="oe_structure" id="oe_structure_website_form_contact_us_thanks_2"/>
             </div>
         </t>
     </template>
+
 </odoo>

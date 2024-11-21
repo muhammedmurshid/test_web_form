@@ -2,7 +2,7 @@
     'name': "Testing Web Module",
     'version': "14.0.1.0",
     'sequence': "0",
-    'depends': ['base', 'mail',],
+    'depends': ['base', 'mail', 'web'],
     'data': [
         'security/group.xml',
         'security/ir.model.access.csv',

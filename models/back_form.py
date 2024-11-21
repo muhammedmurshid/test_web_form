@@ -7,4 +7,4 @@ class BackendData(models.Model):
     mail = fields.Char(string="Mail", widget='mail')
     phone = fields.Char(string="Phone", widget='phone')
     course = fields.Char(string="Course")
-    date = fields.Date(string="Date")
+

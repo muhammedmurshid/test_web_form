@@ -13,7 +13,6 @@
                             <field name="mail"/>
                             <field name="phone"/>
                             <field name="course"/>
-                            <field name="date"/>
 
                         </group>
                     </group>
