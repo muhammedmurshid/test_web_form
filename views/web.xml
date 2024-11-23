@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-
+    <template id="hide_footer_copyright" inherit_id="website.layout" name="Footer No Copyright" active="True">
+        <xpath expr="//div[hasclass('o_footer_copyright')]" position="replace">
+            #add your custom copyright content
+        </xpath>
+    </template>
     <template id="lead_web_enquire_form" name="Contact Us">
         <t t-call="website.layout">
             <t t-javascript="true">
@@ -129,6 +133,21 @@
 
     <template id="tmp_lead_enquire_form_success" name="Customer Form Successfully Submitted">
         <t t-call="website.layout">
+            <t t-javascript="true">
+                <script type="text/javascript">
+                    window.onload = function () {
+                    // Hide header and footer by their IDs
+                    const topElement = document.getElementById('top');
+                    const footerElement = document.getElementById('footer');
+                    if (topElement) {
+                    topElement.style.display = "none";
+                    }
+                    if (footerElement) {
+                    footerElement.style.display = "none";
+                    }
+                    };
+                </script>
+            </t>
             <div id="wrap">
                 <div class="oe_structure" id="oe_structure_website_form_contact_us_thanks_1"/>
                 <div class="container mt-4">
