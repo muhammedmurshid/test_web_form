@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+
     <template id="lead_web_enquire_form" name="Contact Us">
         <t t-call="website.layout">
+            <t t-javascript="true">
+                <script type="text/javascript">
+                    window.onload = function () {
+                    // Hide header and footer by their IDs
+                    const topElement = document.getElementById('top');
+                    const footerElement = document.getElementById('footer');
+                    if (topElement) {
+                    topElement.style.display = "none";
+                    }
+                    if (footerElement) {
+                    footerElement.style.display = "none";
+                    }
+                    };
+                </script>
+            </t>
 
             <div id="wrap" class="oe_structure oe_empty">
                 <section class="s_website_form" data-vcss="001" data-snippet="s_website_form"
@@ -101,6 +117,16 @@
             </div>
         </t>
     </template>
+    <!--    <template id="hide_header_lead_form_custom" inherit_id="website.layout">-->
+    <!--        <xpath expr="//header" position="replace">-->
+    <!--            <t t-if="request.httprequest.path != '/lead_form'">-->
+    <!--                <header>-->
+    <!--&lt;!&ndash;                    <t t-call="website.header"/>&ndash;&gt;-->
+    <!--                </header>-->
+    <!--            </t>-->
+    <!--        </xpath>-->
+    <!--    </template>-->
+
     <template id="tmp_lead_enquire_form_success" name="Customer Form Successfully Submitted">
         <t t-call="website.layout">
             <div id="wrap">
