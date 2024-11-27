@@ -1,5 +1,5 @@
 {
-    'name': "Testing Web Module",
+    'name': "Website Lead Forms",
     'version': "14.0.1.0",
     'sequence': "0",
     'depends': ['base', 'mail', 'web'],
@@ -8,6 +8,7 @@
         'security/ir.model.access.csv',
         'views/back_form.xml',
         'views/web.xml',
+        'views/sec_web_form.xml'
 
 
 

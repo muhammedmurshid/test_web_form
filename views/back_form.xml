@@ -41,11 +41,12 @@
         <field name="view_mode">tree,form</field>
     </record>
 
-    <menuitem name="Testing Backend"
+    <menuitem name="Website Leads"
               id="model_testing__backend_main_menu_view"
+              web_icon="/test_web_form/static/description/icon.png"
               sequence="1"/>
 
-    <menuitem name="Back"
+    <menuitem name="Website Leads"
               id="model_testing_back"
               action="model_testing_action_backend"
               parent="model_testing__backend_main_menu_view"
