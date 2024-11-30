@@ -8,7 +8,8 @@
         'security/ir.model.access.csv',
         'views/back_form.xml',
         'views/web.xml',
-        'views/sec_web_form.xml'
+        'views/sec_web_form.xml',
+        'views/enquire_form.xml'
 
 
 

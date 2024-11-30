@@ -23,19 +23,18 @@
                 </script>
             </t>
 
-            <div id="wrap" class="oe_structure oe_empty">
+            <div id="wrap" class="oe_structure oe_empty"
+                 style="display: flex; align-items: center; justify-content: center; min-height: 100vh; background-color: #f3f3f3;">
                 <section class="s_website_form"
-                         style="padding: 30px; max-width: 800px; margin: 50px auto; background: #f5f5f5; border-radius: 15px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
-                    <div style="display: flex; align-items: center; justify-content: space-between;">
+                         style="padding: 30px; max-width: 600px; width: 100%; background: #f5f5f5; border-radius: 15px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
+                    <div style="text-align: center;">
                         <!-- Title Section -->
-                        <div>
-                            <h2 style="font-size: 24px; font-family: 'Arial', sans-serif; font-weight: bold; margin: 0;">
-                                GET A CALL BACK
-                            </h2>
-                            <p style="font-size: 14px; font-family: 'Arial', sans-serif; color: #333; margin-top: 5px;">
-                                Embark on your path to professionalism right here and now!
-                            </p>
-                        </div>
+                        <h2 style="font-size: 24px; font-family: 'Arial', sans-serif; font-weight: bold; margin: 0;">
+                            GET A CALL BACK
+                        </h2>
+                        <p style="font-size: 14px; font-family: 'Arial', sans-serif; color: #333; margin-top: 5px;">
+                            Embark on your path to professionalism right here and now!
+                        </p>
                     </div>
 
                     <!-- Form Section -->

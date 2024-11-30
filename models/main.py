@@ -82,3 +82,7 @@ class ZohoIntegration(http.Controller):
         })
 
         return request.render('test_web_form.tmp_lead_enquire_second_form_success')
+
+    @http.route(['/lead_enquire_form'], type='http', auth='public', website=True, csrf=False)
+    def lead_enquire_form(self, **kwargs):
+        return request.render('test_web_form.lead_web_enquiry_form')
