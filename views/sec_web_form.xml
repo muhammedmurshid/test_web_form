@@ -52,7 +52,7 @@
             </style>
 
             <div id="wrap" class="oe_structure oe_empty"
-                 style="display: flex; align-items: center; justify-content: center; min-height: 100vh; background-color: #f3f3f3;">
+                 style="display: flex; align-items: center; justify-content: center; min-height: 100vh; background-color: white;">
                 <section class="s_website_form"
                          style="padding: 30px; max-width: 600px; width: 100%; background: #f5f5f5; border-radius: 15px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
                     <div style="text-align: center;">
